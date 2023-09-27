@@ -74,6 +74,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
       children: [
         PageListViewportGestures(
           controller: _controller,
+          onLongPressStart: (p0) => print("onLongPressStart: $p0"),
           lockPanAxis: true,
           child: PageListViewport(
             controller: _controller,
